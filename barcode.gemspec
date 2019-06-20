@@ -7,6 +7,6 @@ spec = Gem::Specification.new do |s|
 
   s.extensions = "ext/extconf.rb"
 
-  s.files = Dir.glob("ext/*.{c,rb}") +
+  s.files = Dir.glob("ext/*.{c,h,rb}") +
             Dir.glob("lib/*.{rb,so}")
 end

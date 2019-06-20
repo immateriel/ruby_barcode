@@ -1,8 +1,5 @@
-ENV['PATH'] = [File.expand_path(
-    File.join(File.dirname(__FILE__), "..", "ext")
-), ENV['PATH']].compact.join(';') if RbConfig::CONFIG['host_os'] =~ /(mswin|mingw|mingw32)/i
 
-require File.dirname(__FILE__) + '/../ext/barcode'
+require_relative '../ext/barcode'
 
 module Barcode
   BARCODE_DEFAULT_FLAGS = 0x00000000

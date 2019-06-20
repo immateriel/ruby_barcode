@@ -1,0 +1,4 @@
+ext/Makefile
+ext/barcode.o
+ext/barcode.so
+.idea
