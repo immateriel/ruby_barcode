@@ -1,4 +1,6 @@
-ext/Makefile
-ext/barcode.o
-ext/barcode.so
+ext/barcode/Makefile
 .idea
+tmp
+Gemfile.lock
+lib/barcode/*.bundle
+lib/barcode/*.so

@@ -1,5 +1,4 @@
-
-require_relative '../ext/barcode'
+require "barcode/barcode"
 
 module Barcode
   BARCODE_DEFAULT_FLAGS = 0x00000000

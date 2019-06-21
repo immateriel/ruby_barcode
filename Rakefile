@@ -1,15 +1,5 @@
-spec = Gem::Specification.load("barcode.gemspec")
+require 'rake/extensiontask'
 
-task :clean do
-  sh "cd ext && make clean; echo"
-end
-
-task :default => [:compile]
-
-task :extconf => [:clean] do
-  sh "cd ext && ruby extconf.rb"
-end
-
-task :compile => [:extconf] do
-  sh "cd ext && make"
+Rake::ExtensionTask.new('barcode') do |ext|
+  ext.lib_dir = "lib/barcode"
 end
